@@ -1,0 +1,43 @@
+
+/*Navigation*/
+nav ul{
+	padding: 0px;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+
+	li{
+		list-style: none;
+		padding:1em 0;
+		background: $color-background;
+		border-right: solid 1px $color-border;
+		float: left;
+	&:hover{
+			background: pink;
+		}
+ 	a{
+		text-decoration: none;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		color: #FFFFFF;
+		}
+	}
+}
+/*=====================================*/
+/*Media Screen Query*/
+@media screen and (min-width: 800px) {
+	nav{
+	
+	border-top:1px solid #fff;
+	li{
+		float:left;
+		width:19.5%;
+		border:2px solid white;
+
+	&:nth-child(1){
+					border-right:solid 2px black;
+		}
+	}
+}
+}

@@ -1,0 +1,38 @@
+/*Global Border overflow control*/
+*{
+	box-sizing:border-box;
+}
+body{
+	margin:0;
+	font-size: 16px;
+	font-family: "LucidaHandwriting", "BebasNeueRegular", "Helvetica";
+}
+
+.wrapper{
+	width:100%;
+	background-color: #fff;
+	padding: 20px;
+}
+header, .container,footer{
+	padding: 1em 0;
+	width:88%;
+	max-width:960px;
+	margin: 0 auto;
+	clear: both;
+}
+a{
+	color:$color-link;
+		&:hover{
+			color:$color-link-hover;
+}
+}
+/*Clearfix*/
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+
+}

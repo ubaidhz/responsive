@@ -1,0 +1,97 @@
+@media screen {
+  /*-----------------Variables------------*/
+  /*Navigation*/
+  /* line 3, ../Sass/_navigation.scss */
+  nav ul {
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+  }
+  /* line 9, ../Sass/_navigation.scss */
+  nav ul li {
+    list-style: none;
+    padding: 1em 0;
+    background: orange;
+    border-right: solid 1px brown;
+    float: left;
+  }
+  /* line 15, ../Sass/_navigation.scss */
+  nav ul li:hover {
+    background: pink;
+  }
+  /* line 18, ../Sass/_navigation.scss */
+  nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  /*=====================================*/
+  /*Media Screen Query*/
+  /*Global Border overflow control*/
+  /* line 2, ../Sass/_layout.scss */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* line 5, ../Sass/_layout.scss */
+  body {
+    margin: 0;
+    font-size: 16px;
+    font-family: "LucidaHandwriting", "BebasNeueRegular", "Helvetica";
+  }
+
+  /* line 11, ../Sass/_layout.scss */
+  .wrapper {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  /* line 16, ../Sass/_layout.scss */
+  header, .container, footer {
+    padding: 1em 0;
+    width: 88%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+  }
+
+  /* line 23, ../Sass/_layout.scss */
+  a {
+    color: crimson;
+  }
+  /* line 25, ../Sass/_layout.scss */
+  a:hover {
+    color: red;
+  }
+
+  /*Clearfix*/
+  /* line 31, ../Sass/_layout.scss */
+  .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 30, ../Sass/_navigation.scss */
+  nav {
+    border-top: 1px solid #fff;
+  }
+  /* line 33, ../Sass/_navigation.scss */
+  nav li {
+    float: left;
+    width: 19.5%;
+    border: 2px solid white;
+  }
+  /* line 38, ../Sass/_navigation.scss */
+  nav li:nth-child(1) {
+    border-right: solid 2px black;
+  }
+}
