@@ -1,0 +1,160 @@
+/**{*/
+	box-sizing:border-box;
+}
+html{
+	border-style: solid none none;
+	border-width: 24px medium medium;
+	border-color: #333;
+	box-shadow: 10px 4px 7px #625a5a;
+	/*-moz-box-shadow: 10px 4px 7px #625a5a; 
+	-webkit-box-shadow: 10px 4px 7px #625a5a;*/
+	margin:1%; 
+}
+body{
+	background: url("images/paper.png");
+	width: 100%;
+	font-family: 'Esteban', serif;
+	/*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-size:16px;
+	margin: 0 auto;
+	padding: 20px; /*implemented for body shadow*/
+	min-height: 1400px;
+}
+
+h1,h2{
+	color: #39a6ff;
+	text-align: center;
+}
+h1, h2, h3, h4{
+	font-family: 'Esteban', serif;
+	/*font-family: "BebasNeueRegular", "HelveticaNeue", sans-serif;*/
+	text-shadow: 1px 1px 1px #f4efef;
+	/*margin: px;*/
+}
+/*Border line test
+.line{
+	margin-top:3em;
+	padding-top:-7em;
+	padding-bottom: .2em;
+	width:100%;
+	margin: opx auto;
+	background: url("images/line.png"); no-repeat scroll center top transparent;
+}
+*/
+/*------------List and image Elements-------------*/
+img{
+	width:100%;   /*describe width and max-width/height margin-left:60%;*/
+	margin: auto;
+	box-shadow: 10px 4px 7px #625a5a;
+}
+hr{
+	color:#39A6FF;
+	box-shadow: 5px 3px 2px white;
+}
+.blog{
+	padding:0px;
+}
+/*.portfolio{
+	font-size: 16px !important;
+}*/
+.portfolio a, .blog a{
+	text-decoration: none;
+}
+a{
+	/*text-decoration: none;*/
+	color: #000000;
+	 /*Sort this out*/
+	padding:0px;
+}
+.blog:hover/*, .blog:hover,.portfolio:hover*/{
+	color:#7C7979;
+}
+.location{
+	list-style: none;
+	display: block;
+	padding-left:0px;
+	margin-left: 0px;
+	list-style: none;
+	color: black;
+}
+/*Personal details alignment*/
+/*Profile and date alignment*/
+.block-details,
+{
+	width:100%;
+}
+.profile-block,
+{
+	float: left;
+	width:45%;
+}
+.date-block{
+	width:45%;
+}
+li{
+	list-style: none;
+	padding: 5px 0 0 0;
+}
+/* First container with name and personal details */
+.wrapper{
+	
+	background-color: #efefef;
+	margin: 0 auto; 
+	box-shadow: 5px 3px 3px #fff;
+	display: block;
+	float: left;
+	margin-left: 40px;
+	/*overflow: hidden;*/
+	padding-bottom:5em;
+	/*max-height:1262px;*/
+}
+
+/* 2nd container with work history and education */
+.wrapper2{
+	background-color: #f0f3f6;
+	margin: 0 auto;
+	box-shadow: 5px 3px 3px #fff;
+	display: block;
+	float: left;
+	margin-left: 40px;
+	/*overflow: hidden;*/
+	/*max-height:1262px;*/
+}
+
+/* ------------------------------------------*/
+.wrapper3{
+	background-color: /* #f7fcfd */#94DAC8;
+	margin: 0 auto;
+	box-shadow: 5px 3px 3px #fff;
+	display: block;
+	float: left;
+	margin-left: 40px;
+	/*overflow: hidden;*/
+	/*max-height:1262px;*/
+}
+.wrapper,
+.wrapper2,
+.wrapper3{
+	padding: 0 20px;
+}
+/*Change li items in personal details class, add box shadow to body for safari and opera */
+/*------------------Clearfix------------------------*/
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+
+}
+/* Media Queries*/
+@media all and (min-width: 900px) {
+ 
+	 .wrapper, 
+	 .wrapper2, 
+	 .wrapper3 {
+	 	width:29.5%;
+	 	min-height: 1262px;
+	 }
+}

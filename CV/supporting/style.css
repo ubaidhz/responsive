@@ -1,0 +1,30 @@
+.personal-details, .personal-details-1{
+	list-style: none;
+	padding:0;
+	float: left;
+}
+.personal-details li a{
+	text-decoration: none;
+	color: black;
+}
+a:hover, a:focus{
+	text-decoration: underline;
+	color: grey ;
+}
+/*.personal-details-1 li{
+clear: both;
+float:left;
+padding-left: 7px;
+margin-top:14px;
+}*/
+.list ul li, .personal-details ul li {
+	/*display: inline;*/
+	clear: left;
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+}

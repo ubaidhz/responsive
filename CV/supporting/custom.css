@@ -1,0 +1,12 @@
+.personal-details {
+	padding:0;
+	list-style:none;
+}
+
+.personal-details li span i {
+	height:16px;
+	width:16px;
+	margin:0 .5em 0 1em;
+	display:inline-block;
+	
+}
