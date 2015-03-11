@@ -57,5 +57,5 @@ footer {
 	width:16px;
 	margin:0 .5em 0 1em;
 	display:inline-block;
-	background: url(images/minus-icon.png);
+	background: url(<i class="fa fa-phone-square fa-2x"></i>);
 }
